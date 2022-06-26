@@ -29,13 +29,26 @@ When clicking right-click you will see an option to open a live server which wil
 
 All items in the navigtion bar are clickable, from there you can nagivate to every page.
 
+<img src="https://raw.githubusercontent.com/ricardoschalkwyk/Capstone/main/images/screenshot/navBar.png" width="400" height="50">
+
 You can add items to the cart by clicking on any of the `Add to cart` buttons.
+
+Also has a `More Info` button which will navigate you to a page that shows details about an item.
+
+<img src="https://raw.githubusercontent.com/ricardoschalkwyk/Capstone/main/images/screenshot/addToCart.png" width="300" height="80">
 
 The cart itself has different options you can use to change the quantity & pricing of the added items.
 
+<!-- do -->
+<img src="https://raw.githubusercontent.com/ricardoschalkwyk/Capstone/main/images/screenshot/options.png" width="300" height="80">
+
 Items within the cart can also be removed with the `Remove` button.
 
-The `Qty` option allows you to change the quantity of items added.
+<img src="https://raw.githubusercontent.com/ricardoschalkwyk/Capstone/main/images/screenshot/remove.png" width="300" height="80">
+
+The `Qty` option allows you to change the quantity of items added or just press `Add to cart` again.
+
+<img src="https://raw.githubusercontent.com/ricardoschalkwyk/Capstone/main/images/screenshot/Qty.png" width="200" height="100">
 
 ## Credits
 
