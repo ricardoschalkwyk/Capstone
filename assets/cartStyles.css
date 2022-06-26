@@ -1,0 +1,73 @@
+/* body */
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: rgb(94, 93, 93);
+  text-align: center;
+  align-items: center;
+}
+
+/* headers */
+header {
+  background-color: white;
+}
+
+/* navs */
+nav {
+  display: flex;
+  text-decoration: none;
+}
+
+nav ul li a {
+  color: #5fa1b5;
+}
+ul {
+  list-style: none;
+}
+
+/* buttons */
+.btn {
+  display: inline-block;
+  background-color: #f64730;
+  color: white;
+  padding: 5px 10px;
+  margin: 5px 0;
+  border-radius: 30px;
+  transition: background-color 0.5s ease;
+}
+.btn:hover {
+  background: #563434;
+}
+
+/* content */
+.container {
+  background-color: aliceblue;
+}
+
+.my-row {
+  background-color: aliceblue;
+  border: 1px solid black;
+  box-shadow: 0px 0px 5px 3px;
+}
+.my-col-1 {
+  background-color: aliceblue;
+  border: 1px solid black;
+  box-shadow: 0px 0px 5px 3px;
+  height: max-content;
+  width: auto;
+}
+
+img {
+  background-color: aliceblue;
+  border: 1px solid rgb(8, 8, 8);
+  box-shadow: 0px 0px 5px 3px;
+
+  width: 100px;
+}
+
+input {
+  margin: 10px;
+}
+td div p {
+  margin-bottom: 5px;
+  margin-top: 10px;
+}

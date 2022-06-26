@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/assets/cartStyles.css" />
+    <title>Cart | Toplaps</title>
+  </head>
+  <body>
+    <header>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <div class="logo">
+              <h1>Your Cart</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- <navbar> -->
+      <ul class="nav nav-tabs justify-content-center">
+        <li class="nav-item">
+          <a class="nav-link" href="/">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/about-us.html">About us</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/catalogue.html">Catalogue</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/shipping.html">Shipping</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="/cart.html">Cart</a>
+        </li>
+      </ul>
+
+      <!-- </navbar> -->
+    </header>
+
+    <!-- content -->
+    <div id="table" class="container">
+      <table class="table table-bordered border-primary">
+        <thead>
+          <tr>
+            <th></th>
+            <th>Product</th>
+            <th>Qty</th>
+            <th>Price</th>
+          </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+      </table>
+
+      <table class="table table-bordered border-primary">
+        <thead>
+          <tr>
+            <th colspan="4">Totals</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td colspan="3">VAT</td>
+            <td id="vat"></td>
+          </tr>
+          <tr>
+            <td colspan="3">Delivery Fee</td>
+            <td id="delivery-fee"></td>
+          </tr>
+          <tr>
+            <td colspan="3">Discount</td>
+            <td id="discount"></td>
+          </tr>
+          <tr>
+            <td colspan="3">Total</td>
+            <td id="total"></td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div>
+        Options:
+        <div>
+          <p>Delivery method:</p>
+
+          <form>
+            <input
+              type="radio"
+              checked="checked"
+              id="collect"
+              name="delivery"
+            />
+            <label for="collect">Collect on-site [No extra fees]</label>
+            <input type="radio" id="delivery" name="delivery" />
+            <label for="delivery">Delivery [Extra fees]</label>
+          </form>
+
+          <form id="deliveryOption" style="display: none">
+            <p>When would you like your item:</p>
+
+            <input type="radio" checked="checked" id="sameDay" name="time" />
+            <label for="sameDay">Same day delivery [R 100,00]</label>
+
+            <input type="radio" id="nextDay" name="time" />
+            <label for="nextDay">Next day delivery [R 50,00]</label>
+          </form>
+        </div>
+
+        <label for="coupon">Redeem Coupon:</label>
+        <input type="text" id="coupon" />
+        <button type="button" class="btn btn-primary" id="apply">Apply</button>
+      </div>
+
+      <button id="confirmed" class="btn btn-primary">Confirm Order</button>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"></script>
+    <script src="/src/products.js"></script>
+    <script src="/src/cart.js"></script>
+  </body>
+</html>
